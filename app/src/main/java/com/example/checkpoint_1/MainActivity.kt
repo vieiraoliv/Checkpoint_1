@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
     fun TextoCustomizado(texto: String, modifier: Modifier = Modifier){
         Text(
             text = texto,
-            modifier =  modifier.fillMaxSize()
+            modifier =  modifier
         )
     }
 
