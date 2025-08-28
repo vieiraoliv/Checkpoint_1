@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.background
 import com.example.checkpoint_1.ui.theme.Checkpoint_1Theme
 
 
@@ -31,7 +32,7 @@ class MainActivity : ComponentActivity() {
     }
     @Composable
     fun Inicial(modifier: Modifier = Modifier) {
-        Column {
+        Column(modifier = modifier.background(color=Color.Blue))  {
             TextoCustomizado("Primeira função composable", modifier)
             Row {
                 TextoCustomizado("Seja bem vindo", modifier)
@@ -45,7 +46,7 @@ class MainActivity : ComponentActivity() {
         Text(
             text = texto,
             modifier =  modifier,
-            color = Color.Red
+            color = Color.White
 
 
             )
