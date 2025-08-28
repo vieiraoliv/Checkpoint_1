@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Checkpoint_1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Text(text = "Hello World",modifier = Modifier.padding(innerPadding))
+                    Text(text = "Hello World!",modifier = Modifier.padding(innerPadding))
                 }
             }
         }
